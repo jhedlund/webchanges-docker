@@ -1,4 +1,4 @@
-name: Build and publish Docker image
+name: Build and publish the Docker image
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
     - development
   
 env:
-  REGISTRY_IMAGE: ghcr.io/yubiuser/webchanges
+  REGISTRY_IMAGE: ghcr.io/jhedlund/webchanges
 
 jobs:
   build:
