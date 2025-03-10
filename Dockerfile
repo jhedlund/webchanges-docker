@@ -10,8 +10,8 @@ ENV PYTHONUTF8=1
 RUN apt-get update; \
     apt-get install -y \
             binutils \
-	    rsyslog \
-	    cron \
+	        rsyslog \
+	        cron \
             tini
 
 # Update pip, setuptools and wheel, install pyinstaller
