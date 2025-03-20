@@ -10,7 +10,7 @@ on:
     - development
   
 env:
-  REGISTRY_IMAGE: ghcr.io/jhedlund/webchanges
+  REGISTRY_IMAGE: ghcr.io/${{ github.repository_owner }}/webchanges
 
 jobs:
   build:
@@ -23,7 +23,6 @@ jobs:
       matrix:
         include:
           - platform: linux/amd64
-          - platform: linux/arm64
     steps:
 
       - name: Prepare name for digest up/download
